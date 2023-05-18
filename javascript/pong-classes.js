@@ -38,12 +38,12 @@ export class Ball {
     intertialTransfer,
     htmlElement
   ) {
-    this.size = { x: 50, y: 50 }; // default ball size
+    this.size = { x: 50, y: 50 }; // default ball size, 20 , 20
     this.position = { x: 50, y: 50 }; // default ball position
     this.direction = { x: 0, y: 0 }; //Ball speed when game starts
-    this.acceleration = 2; //X speed multipler on successful block
+    this.acceleration = 2; //X speed multipler on successful block, was 0
     this.initial = { x: 2, y: 0 }; //speed reset on point score
-    this.maximum = { x: 2, y: 1 }; //maximum speed
+    this.maximum = { x: 10, y: 10 }; //maximum speed , was 2, 1
     this.inertialTransfer = 0.25; //multiplier for velocity.y transfer from paddle
     this.htmlElement = null; //element on HTML page
   }
