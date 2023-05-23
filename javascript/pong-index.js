@@ -87,7 +87,7 @@ function gameProcess() {
     wallSound.play();
   }
   if (ballHitPaddle.state) {
-paddleSound.play();
+     paddleSound.play();
   }
   if (leftScoreHit.state) {
     scoreSound.play();
