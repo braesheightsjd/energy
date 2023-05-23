@@ -84,7 +84,11 @@ function gameProcess() {
   //EVENTS
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
-    wallSound.play();
+  //  wallSound.play();
+List<String> list = new ArrayList<String>();
+list.add(wallSound.play());
+list.add(paddleSound.play());
+String random = list.get(new Random().nextInt(list.size()));
   }
   if (ballHitPaddle.state) {
     paddleSound.play();
