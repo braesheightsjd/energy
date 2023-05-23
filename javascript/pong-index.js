@@ -86,6 +86,9 @@ function gameProcess() {
   if (ballHitWall.state === true) {
     wallSound.play();
   }
+  if (ballHitWall.state === true && rightScoreHigher.state) {
+    paddleSound.play();
+  }
   if (ballHitPaddle.state) {
      paddleSound.play();
   }
