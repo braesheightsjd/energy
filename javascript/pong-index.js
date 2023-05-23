@@ -87,13 +87,7 @@ function gameProcess() {
     wallSound.play();
   }
   if (ballHitPaddle.state) {
-     int foo = Math.random() * 100;
-if (foo < 80) // 0-79
-{  paddleSound.play();}
-else if (foo < 85) // 80-84
-{    wallSound.play();}
-else // 85-99
-{ wallSound.play();}
+paddleSound.play();
   }
   if (leftScoreHit.state) {
     scoreSound.play();
