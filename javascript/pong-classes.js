@@ -15,7 +15,7 @@ export class Game {
     computerDifficulty,
     computerDifficultySpeed
   ) {
-    this.size = { x: 1000, y: 1000 }; //container for entire game
+    this.size = { x: 100, y: 100 }; //container for entire game
     this.padding = { x: 10, y: 10 }; //white space inside game border
     this.htmlElement = null; //element on HTML page
     this.mousePosition = { x: 0, y: 0 };
