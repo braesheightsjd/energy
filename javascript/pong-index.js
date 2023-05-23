@@ -84,7 +84,14 @@ function gameProcess() {
   //EVENTS
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
- wallSound.play();
+// wallSound.play();
+   int foo = Math.random() * 100;
+if (foo < 80) // 0-79
+    wallSound.play();
+else if (foo < 85) // 80-84
+    scoreSound.play();
+else // 85-99
+   paddleSound.play();
   }
   if (ballHitPaddle.state) {
     paddleSound.play();
