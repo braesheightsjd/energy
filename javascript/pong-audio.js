@@ -67,7 +67,7 @@ soundArray.push(paddle2Sound);
 export var paddle3Sound = new soundFile("paddle3.wav");
 soundArray.push(paddle3Sound);
 
-export var scoreSound = new soundFile("silence.wav");
+export var scoreSound = new soundFile("score.wav");
 soundArray.push(scoreSound);
 
 export var ambientSound = new soundFile("ambient.wav");
@@ -75,12 +75,12 @@ soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
 
-export var adventureMusic = new soundFile("silence.wav");
+export var adventureMusic = new soundFile("adv.wav");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
 adventureMusic.player.volume.value = -16;
 
-export var villageMusic = new soundFile("silence.wav");
+export var villageMusic = new soundFile("vil.wav");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
