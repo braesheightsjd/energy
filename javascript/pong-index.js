@@ -113,16 +113,16 @@ function gameProcess() {
     paddle3Sound.play();
   }
   // new ones 
-    if (ballHitWall4.state) {
+    if (ballHitWall4.state === true) {
     wall4Sound.play();
   }
-    if (ballHitWall5.state) {
+    if (ballHitWall5.state === true) {
     wall5Sound.play();
   }
-     if (ballHitWall2.state) {
+     if (ballHitWall2.state === true) {
     wall2Sound.play();
   }
-    if (ballHitWall3.state) {
+    if (ballHitWall3.state === true) {
     wall3Sound.play();
   }
   
