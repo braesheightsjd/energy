@@ -55,17 +55,40 @@ export var rightScoreHigher = new GameEvent();
 rightScoreHigher.persistent = true;
 gameEventArray.push(rightScoreHigher);
 
+// new ones below
+
 export var rightHighHitPaddle = new GameEvent();
+gameEventArray.push(rightScoreHigher);
+ballHitPaddle.persistent = false;
+gameEventArray.push(rightHighHitPaddle);
 
 export var rightHighHitWall = new GameEvent();
+gameEventArray.push(rightScoreHigher);
+ballHitWall.persistent = false;
+gameEventArray.push(rightHighHitWall);
 
 export var leftHighHitPaddle = new GameEvent();
+leftScoreHigher.persistent = true;
+ballHitPaddle.persistent = false;
+gameEventArray.push(leftHighHitPaddle);
 
 export var leftHighHitWall = new GameEvent();
+leftScoreHigher.persistent = true;
+ballHitWall.persistent = false;
+gameEventArray.push(leftHighHitWall);
 
-export var rightHighHitPaddle = new GameEvent();
+export var rightScoreHitWall = new GameEvent();
+rightScoreHit.persistent = false;
+ballHitWall.persistent = false;
+gameEventArray.push(rightScoreHitWall);
 
-export var rightHighHitPaddle = new GameEvent();
+export var leftScoreHitWall = new GameEvent();
+leftScoreHit.persistent = false;
+ballHitWall.persistent = false;
+gameEventArray.push(leftScoreHitWall);
+
+
+
 
 
 //Add More Events HERE
