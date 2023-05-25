@@ -119,6 +119,12 @@ function gameProcess() {
     1,
     2
   );
+  wall2Sound.player.playbackRate = randomAdjust(Math.abs(ball.acceleration), true);
+  wall3Sound.player.playbackRate = randomAdjust(Math.abs(paddle.velocity), true);
+  wall4Sound.player.playbackRate = randomAdjust(Math.abs(ball.acceleration), true);
+  wall5Sound.player.playbackRate = randomAdjust(Math.abs(paddle.direction), true);
+
+    
   //EVENTS
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
