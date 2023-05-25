@@ -107,6 +107,27 @@ function gameProcess() {
   if (rightScoreHit.state) {
     scoreSound.play();
   }
+  // new ones 
+    if (rightScoreHitWall.state) {
+    wall4Sound.play();
+  }
+    if (rightScoreHitWall.state) {
+    wall5Sound.play();
+  }
+     if (rightHighHitWall.state) {
+    wall2Sound.play();
+  }
+    if (leftHighHitWall.state) {
+    wall3Sound.play();
+  }
+      if (rightHighHitPaddle.state) {
+    paddle2Sound.play();
+  }
+    if (leftHighHitPaddle.state) {
+    paddle3Sound.play();
+  }
+  
+  // end of new ones
   //this is a persistant event so it must be checked and checked if it changed
   if (rightScoreHigher.state && rightScoreHigher.changed) {
     adventureMusic.play();
