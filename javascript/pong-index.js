@@ -113,18 +113,18 @@ function gameProcess() {
     paddle3Sound.play();
   }
   // new ones 
-    if (ballHitWall4.state === true) {
-    wall4Sound.play();
-  }
-    if (ballHitWall5.state === true) {
-    wall5Sound.play();
-  }
-     if (ballHitWall2.state === true) {
-    wall2Sound.play();
-  }
-    if (ballHitWall3.state === true) {
-    wall3Sound.play();
-  }
+//     if (ballHitWall4.state === true) {
+//     wall4Sound.play();
+//   }
+//     if (ballHitWall5.state === true) {
+//     wall5Sound.play();
+//   }
+//      if (ballHitWall2.state === true) {
+//     wall2Sound.play();
+//   }
+//     if (ballHitWall3.state === true) {
+//     wall3Sound.play();
+//   }
   
   // end of new ones
   //this is a persistant event so it must be checked and checked if it changed
@@ -237,7 +237,7 @@ function updateBall() {
   //Bottom Wall
   if (newBallPos.y + ball.size.y > game.size.y - game.padding.y) {
     ball.direction.y = -Math.abs(ball.direction.y);
-    ballHitWall3.turnOn();
+    ballHitWall.turnOn(); // made wall3
   }
   //Left Wall
   if (newBallPos.x < game.padding.x) {
@@ -257,20 +257,20 @@ function updateBall() {
         rightScoreHit.turnOn();
         paddleRight.hasHit = false;
       } else {
-        ballHitWall2.turnOn();
+        ballHitWall.turnOn(); // made wall 2
       }
       ball.position.x = game.padding.x;
       ball.direction.x = ball.initial.x; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
-      ballHitWall5.turnOn();
+      ballHitPaddle.turnOn(); // made wall 5
       paddleLeft.hasHit = true;
     }
   }
   //Top Wall
   if (newBallPos.y < game.padding.y) {
     ball.direction.y = Math.abs(ball.direction.y);
-    ballHitWall4.turnOn();
+    ballHitWall.turnOn(); // made wall 4
   }
   //Move Ball
   ball.position.x = newBallPos.x;
