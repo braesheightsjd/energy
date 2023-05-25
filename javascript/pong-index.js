@@ -10,7 +10,13 @@ RUNNING PROCESSES - things that will run every frame
 //Sound functions and classes
 import {
   wallSound,
+  wall2Sound,
+  wall3Sound,
+  wall4Sound,
+  wall5Sound,
   paddleSound,
+  paddle2Sound,
+  paddle3Sound,
   scoreSound,
   ambientSound,
   adventureMusic,
@@ -85,9 +91,6 @@ function gameProcess() {
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
     wallSound.play();
-  }
-  if (ballHitWall.state === true && rightScoreHigher.state) {
-    paddleSound.play();
   }
   if (ballHitPaddle.state) {
      paddleSound.play();
