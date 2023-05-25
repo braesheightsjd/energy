@@ -232,7 +232,7 @@ function updateBall() {
   //Bottom Wall
   if (newBallPos.y + ball.size.y > game.size.y - game.padding.y) {
     ball.direction.y = -Math.abs(ball.direction.y);
-    ballHitWall.turnOn();
+    ballHitWall3.turnOn();
   }
   //Left Wall
   if (newBallPos.x < game.padding.x) {
@@ -252,20 +252,20 @@ function updateBall() {
         rightScoreHit.turnOn();
         paddleRight.hasHit = false;
       } else {
-        ballHitWall.turnOn();
+        ballHitWall2.turnOn();
       }
       ball.position.x = game.padding.x;
       ball.direction.x = ball.initial.x; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
-      ballHitPaddle.turnOn();
+      ballHitWall5.turnOn();
       paddleLeft.hasHit = true;
     }
   }
   //Top Wall
   if (newBallPos.y < game.padding.y) {
     ball.direction.y = Math.abs(ball.direction.y);
-    ballHitWall.turnOn();
+    ballHitWall4.turnOn();
   }
   //Move Ball
   ball.position.x = newBallPos.x;
