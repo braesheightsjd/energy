@@ -102,10 +102,10 @@ function gameProcess() {
      paddleSound.play();
   }
   if (leftScoreHit.state) {
-    scoreSound.play();
+    paddle2Sound.play();
   }
   if (rightScoreHit.state) {
-    scoreSound.play();
+    paddle3Sound.play();
   }
   // new ones 
     if (rightScoreHitWall.state) {
@@ -119,12 +119,6 @@ function gameProcess() {
   }
     if (leftHighHitWall.state) {
     wall3Sound.play();
-  }
-      if (rightHighHitPaddle.state) {
-    paddle2Sound.play();
-  }
-    if (leftHighHitPaddle.state) {
-    paddle3Sound.play();
   }
   
   // end of new ones
