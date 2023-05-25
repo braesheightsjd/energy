@@ -35,6 +35,22 @@ export var ballHitWall = new GameEvent();
 ballHitWall.persistent = false;
 gameEventArray.push(ballHitWall);
 
+export var ballHitWall2 = new GameEvent();
+ballHitWall2.persistent = false;
+gameEventArray.push(ballHitWall2);
+
+export var ballHitWall3 = new GameEvent();
+ballHitWall3.persistent = false;
+gameEventArray.push(ballHitWall3);
+
+export var ballHitWall4 = new GameEvent();
+ballHitWall4.persistent = false;
+gameEventArray.push(ballHitWall4);
+
+export var ballHitWall5 = new GameEvent();
+ballHitWall5.persistent = false;
+gameEventArray.push(ballHitWall5);
+
 export var ballHitPaddle = new GameEvent();
 ballHitPaddle.persistent = false;
 gameEventArray.push(ballHitPaddle);
