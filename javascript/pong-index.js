@@ -10,13 +10,7 @@ RUNNING PROCESSES - things that will run every frame
 //Sound functions and classes
 import {
   wallSound,
-  wall2Sound,
-  wall3Sound,
-  wall4Sound,
-  wall5Sound,
   paddleSound,
-  paddle2Sound,
-  paddle3Sound,
   scoreSound,
   ambientSound,
   adventureMusic,
@@ -31,21 +25,10 @@ import {
   gameEventArray,
   ballHitWall,
   ballHitPaddle,
-  ballHitWall2,
-  ballHitWall3,
-  ballHitWall4,
-  ballHitWall5,
-  ballHitPaddle2,
   leftScoreHit,
   rightScoreHit,
   leftScoreHigher,
   rightScoreHigher,
-  rightHighHitWall,
-  leftHighHitWall,
-  rightHighHitPaddle,
-  leftHighHitPaddle,
-  rightScoreHitWall,
-  leftScoreHitWall,
   computerPlayer,
   mouseControl,
   muteControl,
@@ -107,10 +90,10 @@ function gameProcess() {
      paddleSound.play();
   }
   if (leftScoreHit.state) {
-    paddle2Sound.play();
+    scoreSound.play(); // was paddle 3
   }
   if (rightScoreHit.state) {
-    paddle3Sound.play();
+    score3Sound.play(); // was paddle 2
   }
   // new ones 
 //     if (ballHitWall4.state === true) {
