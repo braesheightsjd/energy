@@ -55,39 +55,18 @@ export var rightScoreHigher = new GameEvent();
 rightScoreHigher.persistent = true;
 gameEventArray.push(rightScoreHigher);
 
-// new ones below
-
-export var rightHighHitPaddle = new GameEvent();
-rightScoreHigher.persistent = true;
-ballHitPaddle.persistent = false;
-gameEventArray.push(rightHighHitPaddle);
-
-export var rightHighHitWall = new GameEvent();
-rightScoreHigher.persistent = true;
-ballHitWall.persistent = false;
-gameEventArray.push(rightHighHitWall);
-
-export var leftHighHitPaddle = new GameEvent();
-leftScoreHigher.persistent = true;
-ballHitPaddle.persistent = false;
-gameEventArray.push(leftHighHitPaddle);
-
-export var leftHighHitWall = new GameEvent();
-leftScoreHigher.persistent = true;
-ballHitWall.persistent = false;
-gameEventArray.push(leftHighHitWall);
-
-export var rightScoreHitWall = new GameEvent();
-rightScoreHit.persistent = false;
-ballHitWall.persistent = false;
-gameEventArray.push(rightScoreHitWall);
-
-export var leftScoreHitWall = new GameEvent();
-leftScoreHit.persistent = false;
-ballHitWall.persistent = false;
-gameEventArray.push(leftScoreHitWall);
-
-
+export var ballHitWall2 = new GameEvent();
+ballHitWall2.persistent = false;
+gameEventArray.push(ballHitWall2);
+export var ballHitWall3 = new GameEvent();
+ballHitWall3.persistent = false;
+gameEventArray.push(ballHitWall3);
+export var ballHitWall = new GameEvent();
+ballHitWall4.persistent = false;
+gameEventArray.push(ballHitWall4);
+export var ballHitWall5 = new GameEvent();
+ballHitWall5.persistent = false;
+gameEventArray.push(ballHitWall5);
 
 
 
