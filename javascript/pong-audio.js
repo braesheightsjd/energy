@@ -46,8 +46,26 @@ export var soundArray = []; //list of sounds loaded
 export var wallSound = new soundFile("wall.wav"); //load sound
 soundArray.push(wallSound); //add sound to list of sounds
 
+export var wall2Sound = new soundFile("wall2.wav"); //load sound
+soundArray.push(wall2Sound); //add sound to list of sounds
+
+export var wall3Sound = new soundFile("wall3.wav"); //load sound
+soundArray.push(wall3Sound); //add sound to list of sounds
+
+export var wall4Sound = new soundFile("wall4.wav"); //load sound
+soundArray.push(wall4Sound); //add sound to list of sounds
+
+export var wall5Sound = new soundFile("wall5.wav"); //load sound
+soundArray.push(wall5Sound); //add sound to list of sounds
+
 export var paddleSound = new soundFile("paddle.wav");
 soundArray.push(paddleSound);
+
+export var paddle2Sound = new soundFile("paddle2.wav");
+soundArray.push(paddle2Sound);
+
+export var paddle3Sound = new soundFile("paddle3.wav");
+soundArray.push(paddle3Sound);
 
 export var scoreSound = new soundFile("silence.wav");
 soundArray.push(scoreSound);
