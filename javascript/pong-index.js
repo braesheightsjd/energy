@@ -91,6 +91,34 @@ function gameProcess() {
     1,
     3
   );
+   adventureMusic.player.playbackRate = scalerange(
+    Math.abs(ball.direction.x),
+    3,
+    4,
+    0,
+    2
+  );
+   villageMusic.player.playbackRate = scalerange(
+    Math.abs(ball.direction.x),
+    3,
+    6,
+    1,
+    0
+  );
+   paddle3Sound.player.playbackRate = scalerange(
+    Math.abs(ball.direction.y),
+    2,
+    4,
+    0,
+    5
+  );
+   paddle2Sound.player.playbackRate = scalerange(
+    Math.abs(ball.direction.y),
+    20,
+    0.001,
+    1,
+    2
+  );
   //EVENTS
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
