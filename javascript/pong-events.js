@@ -58,12 +58,12 @@ gameEventArray.push(rightScoreHigher);
 // new ones below
 
 export var rightHighHitPaddle = new GameEvent();
-gameEventArray.push(rightScoreHigher);
+rightScoreHigher.persistent = true;
 ballHitPaddle.persistent = false;
 gameEventArray.push(rightHighHitPaddle);
 
 export var rightHighHitWall = new GameEvent();
-gameEventArray.push(rightScoreHigher);
+rightScoreHigher.persistent = true;
 ballHitWall.persistent = false;
 gameEventArray.push(rightHighHitWall);
 
