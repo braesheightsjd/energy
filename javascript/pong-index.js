@@ -35,6 +35,11 @@ import {
   rightScoreHit,
   leftScoreHigher,
   rightScoreHigher,
+  rightHighHitWall
+  leftHighHitWall
+  rightHighHitPaddle
+  leftHighHitPaddle
+  rightHitHit
   computerPlayer,
   mouseControl,
   muteControl,
