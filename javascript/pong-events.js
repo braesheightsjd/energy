@@ -55,6 +55,19 @@ export var rightScoreHigher = new GameEvent();
 rightScoreHigher.persistent = true;
 gameEventArray.push(rightScoreHigher);
 
+export var rightHighHitPaddle = new GameEvent();
+
+export var rightHighHitWall = new GameEvent();
+
+export var leftHighHitPaddle = new GameEvent();
+
+export var leftHighHitWall = new GameEvent();
+
+export var rightHighHitPaddle = new GameEvent();
+
+export var rightHighHitPaddle = new GameEvent();
+
+
 //Add More Events HERE
 
 ////////////////////////////////////////////
