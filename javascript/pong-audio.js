@@ -67,7 +67,7 @@ soundArray.push(paddle2Sound);
 export var paddle3Sound = new soundFile("paddle3.wav");
 soundArray.push(paddle3Sound);
 
-export var scoreSound = new soundFile("silence.wav");
+export var scoreSound = new soundFile("score.wav");
 soundArray.push(scoreSound);
 
 export var ambientSound = new soundFile("ambient.wav");
