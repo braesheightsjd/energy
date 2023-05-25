@@ -31,6 +31,11 @@ import {
   gameEventArray,
   ballHitWall,
   ballHitPaddle,
+  ballHitWall2,
+  ballHitWall3,
+  ballHitWall4,
+  ballHitWall5,
+  ballHitPaddle2,
   leftScoreHit,
   rightScoreHit,
   leftScoreHigher,
@@ -108,16 +113,16 @@ function gameProcess() {
     paddle3Sound.play();
   }
   // new ones 
-    if (rightScoreHitWall.state) {
+    if (ballHitWall4.state) {
     wall4Sound.play();
   }
-    if (rightScoreHitWall.state) {
+    if (ballHitWall5.state) {
     wall5Sound.play();
   }
-     if (rightHighHitWall.state) {
+     if (ballHitWall2.state) {
     wall2Sound.play();
   }
-    if (leftHighHitWall.state) {
+    if (ballHitWall3.state) {
     wall3Sound.play();
   }
   
