@@ -55,18 +55,18 @@ export var rightScoreHigher = new GameEvent();
 rightScoreHigher.persistent = true;
 gameEventArray.push(rightScoreHigher);
 
-export var ballHitWall2 = new GameEvent();
-ballHitWall2.persistent = false;
-gameEventArray.push(ballHitWall2);
-export var ballHitWall3 = new GameEvent();
-ballHitWall3.persistent = false;
-gameEventArray.push(ballHitWall3);
-export var ballHitWall = new GameEvent();
-ballHitWall4.persistent = false;
-gameEventArray.push(ballHitWall4);
-export var ballHitWall5 = new GameEvent();
-ballHitWall5.persistent = false;
-gameEventArray.push(ballHitWall5);
+// export var ballHitWall2 = new GameEvent();
+// ballHitWall2.persistent = false;
+// gameEventArray.push(ballHitWall2);
+// export var ballHitWall3 = new GameEvent();
+// ballHitWall3.persistent = false;
+// gameEventArray.push(ballHitWall3);
+// export var ballHitWall = new GameEvent();
+// ballHitWall4.persistent = false;
+// gameEventArray.push(ballHitWall4);
+// export var ballHitWall5 = new GameEvent();
+// ballHitWall5.persistent = false;
+// gameEventArray.push(ballHitWall5);
 
 
 
