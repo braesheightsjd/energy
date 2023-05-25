@@ -30,6 +30,10 @@ import {
   GameEvent,
   gameEventArray,
   ballHitWall,
+  ballHitWall2,
+  ballHitWall3,
+  ballHitWall4,
+  ballHitWall5,
   ballHitPaddle,
   leftScoreHit,
   rightScoreHit,
@@ -96,10 +100,22 @@ function gameProcess() {
      paddleSound.play();
   }
   if (leftScoreHit.state) {
-    scoreSound.play();
+    paddle2Sound.play();
   }
   if (rightScoreHit.state) {
-    scoreSound.play();
+    paddle3Sound.play();
+  }
+  if (ballHitWall2.state === true) {
+    wall2Sound.play();
+  }
+   if (ballHitWall3.state === true) {
+    wall3Sound.play();
+  }
+   if (ballHitWall4.state === true) {
+    wall4Sound.play();
+  }
+   if (ballHitWall5.state === true) {
+    wall5Sound.play();
   }
   //this is a persistant event so it must be checked and checked if it changed
   if (rightScoreHigher.state && rightScoreHigher.changed) {
@@ -211,7 +227,7 @@ function updateBall() {
   //Bottom Wall
   if (newBallPos.y + ball.size.y > game.size.y - game.padding.y) {
     ball.direction.y = -Math.abs(ball.direction.y);
-    ballHitWall.turnOn();
+    ballHitWall2.turnOn();
   }
   //Left Wall
   if (newBallPos.x < game.padding.x) {
@@ -231,20 +247,21 @@ function updateBall() {
         rightScoreHit.turnOn();
         paddleRight.hasHit = false;
       } else {
-        ballHitWall.turnOn();
+        ballHitWall3.turnOn();
       }
       ball.position.x = game.padding.x;
       ball.direction.x = ball.initial.x; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
       ballHitPaddle.turnOn();
+      ballHitWall4.turnOn();
       paddleLeft.hasHit = true;
     }
   }
   //Top Wall
   if (newBallPos.y < game.padding.y) {
     ball.direction.y = Math.abs(ball.direction.y);
-    ballHitWall.turnOn();
+    ballHitWall5.turnOn();
   }
   //Move Ball
   ball.position.x = newBallPos.x;
