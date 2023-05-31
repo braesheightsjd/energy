@@ -281,7 +281,7 @@ function updateBall() {
       ball.direction.x = ball.initial.x; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
-      ballHitPaddle4.turnOn();
+      ballHitWall4.turnOn();
       paddleLeft.hasHit = true;
     }
   }
