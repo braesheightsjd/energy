@@ -43,26 +43,44 @@ export var soundArray = []; //list of sounds loaded
 
 //Here is where all the Sound File Players Start
 
-export var wallSound = new soundFile("wall.mp3"); //load sound
+export var wallSound = new soundFile("wall.wav"); //load sound
 soundArray.push(wallSound); //add sound to list of sounds
 
-export var paddleSound = new soundFile("paddle.mp3");
+export var wall2Sound = new soundFile("wall2.wav"); //load sound
+soundArray.push(wall2Sound); //add sound to list of sounds
+
+export var wall3Sound = new soundFile("wall3.wav"); //load sound
+soundArray.push(wall3Sound); //add sound to list of sounds
+
+export var wall4Sound = new soundFile("wall4.wav"); //load sound
+soundArray.push(wall4Sound); //add sound to list of sounds
+
+export var wall5Sound = new soundFile("wall5.wav"); //load sound
+soundArray.push(wall5Sound); //add sound to list of sounds
+
+export var paddleSound = new soundFile("paddle.wav");
 soundArray.push(paddleSound);
 
-export var scoreSound = new soundFile("silence.mp3");
+export var paddle2Sound = new soundFile("paddle2.wav");
+soundArray.push(paddle2Sound);
+
+export var paddle3Sound = new soundFile("paddle3.wav");
+soundArray.push(paddle3Sound);
+
+export var scoreSound = new soundFile("score.wav");
 soundArray.push(scoreSound);
 
-export var ambientSound = new soundFile("ambient.mp3");
+export var ambientSound = new soundFile("ambient.wav");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -20; //turn down volume
 
-export var adventureMusic = new soundFile("silence.mp3");
+export var adventureMusic = new soundFile("adv.wav");
 soundArray.push(adventureMusic);
 adventureMusic.player.loop = true;
 adventureMusic.player.volume.value = -16;
 
-export var villageMusic = new soundFile("silence.mp3");
+export var villageMusic = new soundFile("vil.wav");
 soundArray.push(villageMusic);
 villageMusic.player.loop = true;
 villageMusic.player.volume.value = -16;
