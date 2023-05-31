@@ -105,20 +105,6 @@ function gameProcess() {
     1,
     0
   );
-   paddle3Sound.player.playbackRate = scalerange(
-    Math.abs(ball.direction.y),
-    2,
-    4,
-    0,
-    5
-  );
-   paddle2Sound.player.playbackRate = scalerange(
-    Math.abs(ball.direction.y),
-    20,
-    0.001,
-    1,
-    2
-  );
   //EVENTS
   // this is a non-persistant event so it only needs to be checked
   if (ballHitWall.state === true) {
@@ -255,7 +241,7 @@ function updateBall() {
   //Bottom Wall
   if (newBallPos.y + ball.size.y > game.size.y - game.padding.y) {
     ball.direction.y = -Math.abs(ball.direction.y);
-    ballHitWall2.turnOn();
+    ballHitWall.turnOn();
   }
   //Left Wall
   if (newBallPos.x < game.padding.x) {
@@ -275,20 +261,20 @@ function updateBall() {
         rightScoreHit.turnOn();
         paddleRight.hasHit = false;
       } else {
-        ballHitWall3.turnOn();
+        ballHitWall.turnOn();
       }
       ball.position.x = game.padding.x;
       ball.direction.x = ball.initial.x; //reset ball speed
       ball.direction.y = ball.initial.y;
     } else {
-      ballHitWall4.turnOn();
+      ballHitWall.turnOn();
       paddleLeft.hasHit = true;
     }
   }
   //Top Wall
   if (newBallPos.y < game.padding.y) {
     ball.direction.y = Math.abs(ball.direction.y);
-    ballHitWall5.turnOn();
+    ballHitWall.turnOn();
   }
   //Move Ball
   ball.position.x = newBallPos.x;
